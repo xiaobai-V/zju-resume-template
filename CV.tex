@@ -90,7 +90,7 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{hjy.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-0.5cm)$) {\includegraphics[height=3cm]{hjy.jpg}};
   \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
@@ -110,7 +110,7 @@
 % \end{itemize}
 
 \textbf{浙江大学} \hfill 2024.09 -- 至今\\[0.5em] % 标题和正文间加一点距离
-电子科学与技术\quad 硕士 \quad 信息与电子工程学院 
+新一代电子信息技术\quad 硕士 \quad 信息与电子工程学院 
 % \begin{itemize}[nosep]
 %     \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
 % \end{itemize}
@@ -119,13 +119,13 @@
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{NFC虚拟仿真软硬件平台} \hfill 2024.12 -- 2025.10 \titlebreak
+项目描述：针对 NFC 近场通信线圈耦合复杂、抗干扰设计难的痛点，搭建集\textbf{场路协同仿真}与\textbf{自主可控硬件验证}于一体的全链路闭环研究平台，实现从物理层电磁特性到协议层数据交互的端到端验证。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{场路联合仿真}：用 CST 建立多场景线圈模型并提取九宫格位置 S21 参数，在 ADS 搭建射频前端电路完成瞬态协同仿真，通过眼图分析验证弱耦合区域通信失效机理。
+    \item \textbf{自主硬件设计}：基于 AVR 单片机（ATtiny84A/ATmega328P）实现 NFC Type 2 标签及 ISO14443-A 底层协议；基于 FPGA 用 Verilog 完成 13.56MHz 载波生成、ASK 调制及数字信号处理。
+    \item \textbf{实测与模型优化}：搭建示波器测试平台对比仿真与实测波形，验证了仿真模型在时序和调制深度上的准确性，为NFC天线设计提供了可靠的虚拟验证环境。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
